@@ -8,9 +8,7 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background-image: url(pic/bg.jpg);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     padding: 10px 10%;
     overflow: hidden;
     position: relative;
@@ -27,7 +25,6 @@ nav{
     width: 150px;
 }
 
-/* แก้ ui → ul */
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -36,13 +33,13 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 400;
 }
 
 .login-btn{
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     margin-right: 15px;
     font-weight: 400;
 }
@@ -52,38 +49,40 @@ nav ul li a{
     text-decoration: none;
     padding: 14px 40px;
     color: #fff;
-    background-image: linear-gradient(45deg, #df4881, #cd30d7);
     font-size: 14px;
+
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+
     border-radius: 30px;
-    border-top-right-radius: 0;
-    transition: 0.5s;    
+
+    transition: all 0.3s ease;
 }
 
 .btn:hover{
-    border-top-right-radius: 30px;
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+    transform: scale(1.05);
 }
 
 .content{
     margin-top: 10%;
     max-width: 600px;
+    padding: 40px;
 }
 
 .content h1{
-    font-size: 70px;
-    color: #222;
+    font-size: 80px;
+    color: #ffffff;
 }
 
 .content p{
     margin: 10px 0 30px;
-    color: #333;
-    animation-delay: 0.5s;
+    color: #f1f1f1;
+    font-size: 18px;
 }
 
-/* แก้ .content btn → .content .btn */
 .content .btn{
     padding: 15px 80px;
     font-size: 16px;
-    animation-delay: 1s;
 }
 
 .features-img{
@@ -93,7 +92,6 @@ nav ul li a{
     right: 10%;
 }
 
-/* แก้ anim ให้ตรงกัน */
 .anim{
     opacity: 0;
     transform: translateY(30px);
